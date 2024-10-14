@@ -69,7 +69,7 @@ public final class FakeSMTP {
 			}
 		} else {
             System.setProperty("mail.mime.decodetext.strict", "false");
-            Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler());
+            //Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler());
 
             EventQueue.invokeLater(new Runnable() {
 				@Override
@@ -77,7 +77,7 @@ public final class FakeSMTP {
 					try {
 						URL envelopeImage = getClass().getResource(Configuration.INSTANCE.get("application.icon.path"));
 						if (envelopeImage != null) {
-							Application.getApplication().setDockIconImage(Toolkit.getDefaultToolkit().getImage(envelopeImage));
+							//Application.getApplication().setDockIconImage(Toolkit.getDefaultToolkit().getImage(envelopeImage));
 						}
 					} catch (RuntimeException e) {
 						LOGGER.debug("Error: {} - This is probably because we run on a non-Mac platform and these components are not implemented", e.getMessage());

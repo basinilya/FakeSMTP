@@ -44,7 +44,7 @@ public final class MainFrame extends WindowAdapter {
      * </p>
 	 */
 	public MainFrame() {
-		((UncaughtExceptionHandler) Thread.getDefaultUncaughtExceptionHandler()).setParentComponent(panel.get());
+		//((UncaughtExceptionHandler) Thread.getDefaultUncaughtExceptionHandler()).setParentComponent(panel.get());
 		Dimension frameSize = new Dimension(Integer.parseInt(Configuration.INSTANCE.get("application.min.width")),
 			Integer.parseInt(Configuration.INSTANCE.get("application.min.height")));
 

@@ -19,7 +19,7 @@ public enum I18n {
 	INSTANCE;
 
 	public static final String UTF8 = "UTF-8";
-	private static final String RESOURCE_FILE = "i18n/messages";
+	private static final String RESOURCE_FILE = "com/nilhcem/fakesmtp/i_1_8_n/messages";
 	private final Logger logger = LoggerFactory.getLogger(I18n.class);
 	private final ResourceBundle resources;
 
